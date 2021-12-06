@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- add metadata, fonts, and CSS with js -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./js/javascript.js"></script>
+  </head>
+  <body id="contact">
+    <header id="header"></header>
+    <main>
+      <!-- title section -->
+      <section>
+        <div>
+          <h1>QUESTIONS, COMMENTS, CONCERNS?</h1>
+        </div>
+        <div>
+          <h2>At Dodge, we value all of your feedback. So drop us a line with the form below so we can better serve you.</h2>
+        </div>
+      </section>
+      <!-- section containing contact form -->
+      <section>
+        <form id="myForm">
+          <label>Your Name
+            <br>
+            <input type="text" name="name" placeholder="Enter here" required>
+          </label>
+          <div>
+            <label>
+              <input type="radio" name="feedback-type" value="Question" required>
+              Question
+            </label>
+            <label>
+              <input type="radio" name="feedback-type" value="Review" required>
+              Review
+            </label>
+            <label>
+              <input type="radio" name="feedback-type" value="Suggestion" required>
+              Suggestion
+            </label>
+          </div>
+          <div>
+            <label>Preferred contact method:
+              <br>
+              <input list="contact-methods" placeholder="Click here" required>
+            </label>
+            <datalist id="contact-methods">
+              <option value="Phone">
+              <option value="Email">
+            </datalist>
+          </div>
+          <label>Phone Number
+            <br>
+            <input type="tel" name="phone" placeholder="###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+          </label>
+          <label>Email
+            <br>
+            <input type="email" name="email" placeholder="Email">
+          </label>
+          <label>What do you want to say?
+            <br>
+            <textarea name="feedback" rows="10" placeholder="Type here"></textarea>
+            <!-- cols="102" rows="10" -->
+          </label>
+          <input type="submit" name="submit" value="Submit Feedback">
+        </form>
+      </section>
+      <!-- contact info section -->
+      <section>
+        <div>
+          <h3>Online forms not your thing?</h3>
+          <h4>Feel free to reach us in whatever way is easiest for you.</h4>
+        </div>
+        <div>
+          <div>
+            <img src="./img/phone-icon" alt="Phone number">
+          </div>
+          <p>1-800-465-2001</p>
+          <div>
+            <img src="./img/home-icon" alt="Dodge address">
+          </div>
+          <p>1000 Chrysler Dr. Auburn Hills, Michigan 48326 United States</p>
+          <div>
+            <img src="./img/email-icon" alt="Email address">
+          </div>
+          <p>dodge.company@chrysler.com</p>
+        </div>
+      </section>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+</html>
